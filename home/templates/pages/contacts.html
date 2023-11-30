@@ -15,21 +15,21 @@
 
   <!-- -------- START HEADER 7 w/ text and video ------- -->
   <header class="bg-gradient-dark">
-    <div class="page-header min-vh-75" style="background-image: url('{% static 'img/office-dark.jpg' %}');">
-      <span class="mask bg-gradient-info opacity-8"></span>
+    <div class="page-header min-vh-65" style="background-image: url('{% static 'images/washington-dc.jpg' %}');">
+      <span class="mask bg-gradient-brown opacity-8"></span>
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-            <h1 class="text-white">Work with an amazing design</h1>
-            <p class="lead mb-4 text-white opacity-8">We’re constantly trying to express ourselves and actualize our dreams. If you have the opportunity to play this game</p>
-            <button type="submit" class="btn bg-white text-dark">Create Account</button>
-            <h6 class="text-white mb-2 mt-5">Find us on</h6>
-            <div class="d-flex justify-content-center">
-              <a href="javascript:;"><i class="fab fa-facebook text-lg text-white me-4"></i></a>
-              <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a>
-              <a href="javascript:;"><i class="fab fa-twitter text-lg text-white me-4"></i></a>
-              <a href="javascript:;"><i class="fab fa-google-plus text-lg text-white"></i></a>
-            </div>
+            <h1 class="text-white">DC Cultural Office</h1>
+            <h2 class="mb-4 text-white opacity-8">Directory</h2>
+<!--            <button type="submit" class="btn bg-white text-dark">Create Account</button>-->
+<!--            <h6 class="text-white mb-2 mt-5">Find us on</h6>-->
+<!--            <div class="d-flex justify-content-center">-->
+<!--              <a href="javascript:;"><i class="fab fa-facebook text-lg text-white me-4"></i></a>-->
+<!--              <a href="javascript:;"><i class="fab fa-instagram text-lg text-white me-4"></i></a>-->
+<!--              <a href="javascript:;"><i class="fab fa-twitter text-lg text-white me-4"></i></a>-->
+<!--              <a href="javascript:;"><i class="fab fa-google-plus text-lg text-white"></i></a>-->
+<!--            </div>-->
           </div>
         </div>
       </div>
@@ -39,18 +39,326 @@
             <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
           </defs>
           <g class="moving-waves">
-            <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
-            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
-            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
-            <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
-            <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
-            <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,1" />
+            <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(194,165,116,0.40" />
+            <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(194,165,116,0.35)" />
+            <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(194,165,116,0.25)" />
+            <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(194,165,116,0.20)" />
+            <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(194,165,116,0.15)" />
+            <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(194,165,116,1)" />
           </g>
         </svg>
       </div>
     </div>
   </header>
   <!-- -------- END HEADER 7 w/ text and video ------- -->
+
+
+<section class="py-7">
+<div class="container position-sticky z-index-sticky top-0">
+  <div class="row">
+    <div class="col-12">
+      <nav class="navbar navbar-expand-lg blur blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-0">
+        <div class="container-fluid px-0">
+          <button class="navbar-toggler shadow-none ms-2" type="button" data-bs-toggle="collapse" data-bs-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon mt-2">
+              <span class="navbar-toggler-bar bar1"></span>
+              <span class="navbar-toggler-bar bar2"></span>
+              <span class="navbar-toggler-bar bar3"></span>
+            </span>
+          </button>
+          <div class="collapse navbar-collapse pt-3 pb-2 py-lg-2 w-100" id="navigation">
+            <ul class="navbar-nav navbar-nav-hover w-100">
+                <!-- Counselor Link-->
+              <li class="nav-item mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder text-nowrap"
+                  href="#counselor_office" id="dropdownMenuCounselor">
+                  Cultural Counselor Office
+                </a>
+              </li>
+               <!-- Attache Link-->
+              <li class="nav-item mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder text-nowrap"
+                  href="#attache_office" id="dropdownMenuAttache">
+                  Cultural Attache Office
+                </a>
+              </li>
+              <!-- Accounting Link-->
+              <li class="nav-item  mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                  href="#accounting_dept" id="dropdownMenuAccounting">
+                  Accounting
+                </a>
+              </li>
+              <!-- Administration Link-->
+              <li class="nav-item  mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                  href="#administration_dept" id="dropdownMenuAdministration">
+                  Administration
+                </a>
+              </li>
+              <!-- Authentication & Placement Link-->
+              <li class="nav-item  mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder text-nowrap"
+                  href="#authentication_dept" id="dropdownMenuAuthentication">
+                  Authentication & Placement
+                </a>
+              </li>
+              <!-- Graduate Link-->
+              <li class="nav-item  mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                  href="#grad_dept" id="dropdownMenuGraduate">
+                  Graduate
+                </a>
+              </li>
+              <!-- Undergrad Link-->
+              <li class="nav-item  mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                  href="#undergrad_dept" id="dropdownMenuUndergraduate">
+                  Undergraduate
+                </a>
+              </li>
+              <!-- Translation Link-->
+              <li class="nav-item  mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                  href="#translation_dept" id="dropdownMenuTranslation">
+                  Translation
+                </a>
+              </li>
+              <!-- IT Link-->
+              <li class="nav-item  mx-2">
+                <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder text-nowrap"
+                  href="#it_dept" id="dropdownMenuIT">
+                  IT
+                </a>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+    </div>
+  </div>
+</div>
+
+</section>
+
+<!--style="background-color:beige;"-->
+
+  <section class="py-7 pt-sm-8 pb-5 position-relative" >
+    <div class="container ">
+      <div class="row align-items-center">
+
+        <!-- Attaches cards-->
+        <div class="container">
+          <!-- Counselor-->
+          <div id="counselor_office" class="row justify-content-center">
+            <div class="col-md-8 text-center mb-5 mt-5">
+              <h3 class="text-brown z-index-1 position-relative">Cultural Counselor/Director</h3>
+              <p class="text-white opacity-8 mb-0">......</p>
+            </div>
+          </div>
+          {% for emp in counselor_dir %}
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-12">
+              <div class="card card-profile mt-lg-0 mt-5 overflow-hidden border border-brown">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <a href="javascript:;">
+                      <div class="p-3 pe-md-0">
+                        <img class="w-100 border-radius-md" src="{% static 'images/waves/brown-waves.jpg' %}" alt="image">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div class="card-body">
+                      <h5 class="mb-0">{{ emp.first_name}} {{ emp.last_name }}</h5>
+                      <h6 class="text-info">{{ emp.job_title}}</h6>
+                      <a class="mb-0" href = "mailto:{{ employee.email }}">{{ emp.email }}</a>
+                      <p class="mb-0">{{ emp.work_phone}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+<!--          Attaches-->
+          <div id="attache_office" class="row justify-content-center">
+            <div class="col-md-8 text-center mb-5 mt-5">
+              <h3 class="text-brown z-index-1 position-relative">Cultural Attaché</h3>
+              <p class="text-white opacity-8 mb-0">......</p>
+            </div>
+          </div>
+          {% for emp in attaches %}
+          <div class="row justify-content-center">
+            <div class="col-lg-6 col-12">
+              <div class="card card-profile mt-lg-0 mt-5 overflow-hidden border border-brown">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">
+                    <a href="javascript:;">
+                      <div class="p-3 pe-md-0">
+                        <img class="w-100 border-radius-md" src="{% static 'images/waves/brown-waves.jpg' %}" alt="image">
+                      </div>
+                    </a>
+                  </div>
+                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div class="card-body">
+                      <h5 class="mb-0">{{ emp.first_name}} {{ emp.last_name }}</h5>
+                      <h6 class="text-info">{{ emp.job_title}}</h6>
+                      <a class="mb-0" href = "mailto:{{ employee.email }}">{{ emp.email }}</a>
+                      <p class="mb-0">{{ emp.work_phone}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+
+        <!-- Accounting cards-->
+        <div id="accounting_dept" class="container">
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-5 mt-5">
+              <h3 class="text-brown z-index-1 position-relative">Accounting Department</h3>
+              <p class="text-white opacity-8 mb-0">......</p>
+            </div>
+          </div>
+          <!-- Acct  Directors employees-->
+          <div class="row justify-content-center">
+            {% for emp in acct_dir %}
+            <div class="col-lg-3 col-12 ">
+              <div class="card card-profile overflow-hidden border border-brown">
+                <div class="row">
+<!--                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">-->
+<!--                    <a href="javascript:;">-->
+<!--                      <div class="p-3 pe-md-0">-->
+<!--                        <img class="w-100 border-radius-md" src="{% static 'images/waves/brown-waves.jpg' %}" alt="image">-->
+<!--                      </div>-->
+<!--                    </a>-->
+<!--                  </div>-->
+                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div class="card-body">
+                      <h5 class="mb-0 text-nowrap">{{ emp.first_name}} {{ emp.last_name }}</h5>
+                      <h6 class="text-success text-nowrap">{{ emp.job_title}}</h6>
+                      <a class="mb-0 text-nowrap" href = "mailto:{{ employee.email }}">{{ emp.email }}</a>
+                      <p class="mb-0 text-nowrap">{{ emp.work_phone}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+          <!--All Acct employees-->
+          <div class="row justify-content-center">
+          {% for emp in acct_emp %}
+          <div class=" col-lg-3 col-12 mt-3 ">
+              <div class="card card-profile mt-lg-0 mt-5 overflow-hidden border border-brown">
+                <div class="row ">
+<!--                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">-->
+<!--                    <a href="javascript:;">-->
+<!--                      <div class="p-3 pe-md-0">-->
+<!--                        <img class="w-100 border-radius-md" src="{% static 'images/waves/brown-waves.jpg' %}" alt="image">-->
+<!--                      </div>-->
+<!--                    </a>-->
+<!--                  </div>-->
+                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div class="card-body">
+                      <h5 class="mb-0 text-nowrap">{{ emp.first_name}} {{ emp.last_name }}</h5>
+                      <h6 class="text-success text-nowrap">{{ emp.job_title}}</h6>
+                      <a class="mb-0 text-nowrap" href = "mailto:{{ employee.email }}">{{ emp.email }}</a>
+                      <p class="mb-0 text-nowrap">{{ emp.work_phone}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+
+       <!-- IT cards-->
+        <div  id="it_dept" class="container" >
+          <div class="row justify-content-center">
+            <div class="col-md-8 text-center mb-5 mt-5">
+              <h3 class="text-brown z-index-1 position-relative">IT Department</h3>
+              <p class="text-white opacity-8 mb-0">......</p>
+            </div>
+          </div>
+<!--          IT  Directors employees-->
+          <div class="row justify-content-center">
+            {% for emp in it_dir %}
+            <div class="col-lg-3 col-12">
+              <div class="card card-profile overflow-hidden border border-brown">
+                <div class="row">
+<!--                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">-->
+<!--                    <a href="javascript:;">-->
+<!--                      <div class="p-3 pe-md-0">-->
+<!--                        <img class="w-100 border-radius-md" src="{% static 'images/waves/brown-waves.jpg' %}" alt="image">-->
+<!--                      </div>-->
+<!--                    </a>-->
+<!--                  </div>-->
+                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div class="card-body">
+                      <h5 class="mb-0 text-nowrap">{{ emp.first_name}} {{ emp.last_name }}</h5>
+                      <h6 class="text-success text-nowrap">{{ emp.job_title}}</h6>
+                      <a class="mb-0 text-nowrap" href = "mailto:{{ employee.email }}">{{ emp.email }}</a>
+                      <p class="mb-0 text-nowrap">{{ emp.work_phone}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+
+<!--          All IT employees-->
+          <div class="row justify-content-center">
+          {% for emp in it_emp %}
+          <div class=" col-lg-3 col-12 mt-3 ">
+              <div class="card card-profile mt-lg-0 mt-5 overflow-hidden border border-brown">
+                <div class="row ">
+<!--                  <div class="col-lg-4 col-md-6 col-12 pe-lg-0">-->
+<!--                    <a href="javascript:;">-->
+<!--                      <div class="p-3 pe-md-0">-->
+<!--                        <img class="w-100 border-radius-md" src="{% static 'images/waves/brown-waves.jpg' %}" alt="image">-->
+<!--                      </div>-->
+<!--                    </a>-->
+<!--                  </div>-->
+                  <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
+                    <div class="card-body">
+                      <h5 class="mb-0 text-nowrap">{{ emp.first_name}} {{ emp.last_name }}</h5>
+                      <h6 class="text-success text-nowrap">{{ emp.job_title}}</h6>
+                      <a class="mb-0 text-nowrap" href = "mailto:{{ employee.email }}">{{ emp.email }}</a>
+                      <p class="mb-0 text-nowrap">{{ emp.work_phone}}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          {% endfor %}
+          </div>
+        </div>
+
+
+<!--            {% if employee.department == 'IT Department' %}-->
+<!--            {% for emp in test %}-->
+
+
+<!--            {% endfor %}-->
+<!--            {% else %}<p> No IT Employees</p>-->
+<!--            {% endif %}-->
+
+      </div>
+    </div>
+  </section>
+
+
+
+
   <!-- Section with four info areas left & one card right with image and waves -->
   <section class="py-7">
     <div class="container">

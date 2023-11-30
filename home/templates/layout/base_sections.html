@@ -20,7 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 <link rel="apple-touch-icon" sizes="76x76" href="{% static 'img/apple-icon.png' %}">
-<link rel="icon" type="image/png" href="{% static 'images/logos/kuwait-logo-small.png' %}">
+<link rel="icon" type="image/png" href="{% static 'images/logos/kuwait_logo_60.png' %}">
 
 <title>
   Kuwait Cultural Office
@@ -38,6 +38,7 @@
 
 <!-- CSS Files -->
 <link id="pagestyle" href="{% static 'css/soft-design-system.css' %}" rel="stylesheet" />
+<link id="customstyle" href="{% static 'css/custom-add.css' %}" rel="stylesheet" />
 </head>
 
 <body {% block body %}{% endblock body %} >
@@ -52,7 +53,7 @@
 
   {% block footer %}
   
-    {% include 'includes/footer_background.html' %}
+    {% include 'include/footer_background.html' %}
 
   {% endblock footer %}
 
