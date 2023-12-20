@@ -7,7 +7,11 @@
 
 
 body {
-  background-color: #c2a574;
+  background-color: #F5F5DC !important;
+}
+
+.bg-light-brown-200 {
+  background-color: #E8DCB5 !important;
 }
 
 
@@ -211,7 +215,7 @@ svg.text-brown .color-background {
   border: none;
 }
 
-#btn-back-to-top {
+.btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -221,4 +225,14 @@ svg.text-brown .color-background {
 /* chang this later */
 .carousel-item img {
 height: 800px;
+}
+
+
+.test:hover {
+background-color: #5c451f;
+}
+
+.navbar-nav .nav-item .nav-link:hover {
+  color: cyan;
+  box-shadow: inset 0 -2.5px 0 0 cyan;
 }

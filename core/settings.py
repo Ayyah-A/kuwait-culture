@@ -53,6 +53,7 @@ INSTALLED_APPS = [
     'theme_soft_design',
     "home",
     'employees',
+    'cards',
 ]
 
 MIDDLEWARE = [

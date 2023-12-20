@@ -1,22 +1,23 @@
 {% extends 'layout/base_sections.html' %}
 {% load static %}
 
-{% block title %} Material Kit 2 by Creative Tim {% endblock title %}
+{% block title %} Kuwait Culture Office {% endblock title %}
 
-{% block body %} class="index-page bg-gray-200" {% endblock body %}
+{% block body %} class="index-page" {% endblock body %}
 
 {% block content %}
 
 <header class="header-2" xmlns="http://www.w3.org/1999/html">
   <div class="page-header min-vh-65 relative" style="background-image: url('{% static 'images/waves/cream-waves2.jpg' %}')">
+      <span class="mask bg-gradient-brown opacity-8"></span>
     <div class="container">
       <div class="row">
         <div class="col-lg-7 text-center mx-auto">
           <img src="{% static 'images/logos/kuwait-logo-small.png' %}" alt="kuwait logo">
-          <h1 class="text-brown pt-3 mt-n2">
-            KUWAIT CULTURAL DIVISION
+          <h1 class="text-white pt-3 mt-n2">
+            KUWAIT CULTURAL Office
           </h1>
-          <p class="lead text-brown mt-3"> Washington, DC<!-- <br/> 3500 INTERNATIONAL DRIVE, NW, WASHINGTON, DC, 20008 USA</p>-->
+          <p class="lead text-white mt-3"> Washington, DC<!-- <br/> 3500 INTERNATIONAL DRIVE, NW, WASHINGTON, DC, 20008 USA</p>-->
         </div>
       </div>
     </div>
@@ -27,12 +28,12 @@
           <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
         </defs>
         <g class="moving-waves">
-          <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(255,255,255,0.40" />
-          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.35)" />
-          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.25)" />
-          <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(255,255,255,0.20)" />
-          <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(255,255,255,0.15)" />
-          <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(255,255,255,0.95" />
+          <use xlink:href="#gentle-wave" x="48" y="-1" fill="rgba(245,245,220,0.40" />
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(245,245,220,0.35)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(245,245,220,0.25)" />
+          <use xlink:href="#gentle-wave" x="48" y="8" fill="rgba(245,245,220,0.20)" />
+          <use xlink:href="#gentle-wave" x="48" y="13" fill="rgba(245,245,220,0.15)" />
+          <use xlink:href="#gentle-wave" x="48" y="16" fill="rgba(245,245,220,0.95" />
         </g>
       </svg>
     </div>
@@ -120,7 +121,7 @@
       <div class="row justify-content-center text-center my-sm-5">
         <div class="col-lg-6">
           <h2 class="text-gradient text-brown mb-0">Welcome to Kuwait Cultural Office</h2>
-          <h2 class="text-gradient text-warning">Infinite Opportunities</h2>
+          <h2 class="text-gradient text-warning">...</h2>
         </div>
         <div class="text-start">
           <p class="lead">The Cultural Office of the Kuwait Embassy seeks to promote the higher education plans and strategies of the Kuwaiti government by placing its scholars in quality programs, and preparing them for the market needs of the country.
@@ -169,8 +170,20 @@
           </div>
            <div class="col-md-6 mt-3">
             <div class="info">
+              <div class="icon">
+                  <i class="fas fa-school text-brown"></i>
+              </div>
+              <h5 class="font-weight-bolder mt-3">University Listings</h5>
+              <p class="pe-3">View list of approved universities & programs</p>
+              <a class="btn bg-gradient-brown" href="https://kuwaitculturedc.org/university_listing/ext_mcpf_list.php" > View Listings</a>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-start mt-5">
+          <div class="col-md-6 mt-3">
+            <div class="info">
               <div class="icon icon-sm">
-                <svg class="text-brown" width="25px" height="25px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                  <svg class="text-brown" width="25px" height="25px" viewBox="0 0 42 42" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                   <title>office</title>
                   <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                   <g transform="translate(-1869.000000, -293.000000)" fill="#FFFFFF" fill-rule="nonzero">
@@ -183,31 +196,6 @@
                   </g>
                   </g>
                 </svg>
-              </div>
-
-              <h5 class="font-weight-bolder mt-3">University Listings</h5>
-              <p class="pe-3">View list of approved universities & programs</p>
-              <a class="btn bg-gradient-brown" href="https://kuwaitculturedc.org/university_listing/ext_mcpf_list.php" > View Listings</a>
-            </div>
-          </div>
-        </div>
-        <div class="row justify-content-start mt-5">
-          <div class="col-md-6 mt-3">
-            <div class="info">
-              <div class="icon icon-sm">
-                  <svg class="text-brown" width="25px" height="25px" viewBox="0 0 40 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                      <title>document</title>
-                      <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                          <g transform="translate(-1870.000000, -591.000000)" fill="#FFFFFF" fill-rule="nonzero">
-                              <g transform="translate(1716.000000, 291.000000)">
-                                  <g transform="translate(154.000000, 300.000000)">
-                                      <path class="color-background" d="M40,40 L36.3636364,40 L36.3636364,3.63636364 L5.45454545,3.63636364 L5.45454545,0 L38.1818182,0 C39.1854545,0 40,0.814545455 40,1.81818182 L40,40 Z" opacity="0.603585379"></path>
-                                      <path class="color-background" d="M30.9090909,7.27272727 L1.81818182,7.27272727 C0.814545455,7.27272727 0,8.08727273 0,9.09090909 L0,41.8181818 C0,42.8218182 0.814545455,43.6363636 1.81818182,43.6363636 L30.9090909,43.6363636 C31.9127273,43.6363636 32.7272727,42.8218182 32.7272727,41.8181818 L32.7272727,9.09090909 C32.7272727,8.08727273 31.9127273,7.27272727 30.9090909,7.27272727 Z M18.1818182,34.5454545 L7.27272727,34.5454545 L7.27272727,30.9090909 L18.1818182,30.9090909 L18.1818182,34.5454545 Z M25.4545455,27.2727273 L7.27272727,27.2727273 L7.27272727,23.6363636 L25.4545455,23.6363636 L25.4545455,27.2727273 Z M25.4545455,20 L7.27272727,20 L7.27272727,16.3636364 L25.4545455,16.3636364 L25.4545455,20 Z"></path>
-                                  </g>
-                              </g>
-                          </g>
-                      </g>
-                  </svg>
               </div>
 
               <h5 class="font-weight-bolder mt-3">Office Directory</h5>
@@ -266,6 +254,79 @@
             </div>
           </div>
       </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="my-5 py-5" >
+  <div class="container">
+    <div class="row">
+
+      <div class="col col-sm  align-items-stretch mt-4 mx-md-auto aos-init" data-aos="flip-right" data-aos-delay="400">
+        <a href="javascript:;">
+      <div class="card card-background tilt" data-tilt>
+            <div class="full-background" style="background-image: url('{% static 'images/waves/brown-waves.jpg' %}')"></div>
+            <div class="card-body pt-4 text-center">
+              <div class="icon icon-lg up mb-2 mt-3">
+                <div class="blobColor">
+                  <i class="fas fa-school text-white"></i>
+                </div>
+              </div>
+              <h2 class="text-white up mb-0">Student Portal</h2>
+            </div>
+          </div>
+          </a>
+      </div>
+
+      <div class="col col-sm  align-items-stretch mt-4 mx-md-auto aos-init" data-aos="flip-right" data-aos-delay="400">
+        <a href="javascript:;">
+      <div class="card card-background tilt" data-tilt>
+            <div class="full-background" style="background-image: url('{% static 'images/waves/brown-waves.jpg' %}')"></div>
+            <div class="card-body pt-4 text-center">
+              <div class="icon icon-lg up mb-2 mt-3">
+                <div class="blobColor">
+                  <i class="fas fa-school text-white"></i>
+                </div>
+              </div>
+              <h2 class="text-white up mb-0">University Listings</h2>
+            </div>
+          </div>
+          </a>
+      </div>
+
+      <div class="col col-sm  align-items-stretch mt-4 mx-md-auto aos-init" data-aos="flip-right" data-aos-delay="400">
+        <a href="javascript:;">
+        <div class="card card-background tilt" data-tilt>
+            <div class="full-background" style="background-image: url('{% static 'images/waves/brown-waves.jpg' %}')"></div>
+            <div class="card-body pt-4 text-center">
+              <div class="icon icon-lg up mb-2 mt-3">
+                <div class="blobColor">
+                  <i class="fas fa-school text-white"></i>
+                </div>
+              </div>
+              <h2 class="text-white up mb-0">Office Directory</h2>
+            </div>
+        </div>
+        </a>
+      </div>
+
+      <div class="col col-sm  align-items-stretch mt-4 mx-md-auto aos-init" data-aos="flip-right" data-aos-delay="400">
+        <a href="javascript:;">
+        <div class="card card-background tilt" data-tilt>
+            <div class="full-background" style="background-image: url('{% static 'images/waves/brown-waves.jpg' %}')"></div>
+            <div class="card-body pt-4 text-center">
+              <div class="icon icon-lg up mb-2 mt-3">
+                <div class="blobColor">
+                  <i class="fas fa-school text-white"></i>
+                </div>
+              </div>
+              <h2 class="text-white up mb-0">Other</h2>
+            </div>
+        </div>
+        </a>
+      </div>
+
     </div>
   </div>
 </section>
