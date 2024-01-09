@@ -51,9 +51,11 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
 
     'theme_soft_design',
+    'ckeditor',
     "home",
     'employees',
     'cards',
+    'announcements'
 ]
 
 MIDDLEWARE = [

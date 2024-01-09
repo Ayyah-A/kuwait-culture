@@ -1,8 +1,10 @@
-django
+django~=4.2.7
 gunicorn
-python-dotenv
+python-dotenv~=1.0.0
 whitenoise
 django-theme-soft-design==1.0.10
 
 # psycopg2-binary
 # mysqlclient
+
+django-ckeditor~=6.7.0

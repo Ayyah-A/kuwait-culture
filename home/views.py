@@ -2,29 +2,32 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from employees.models import Employee
 from cards.models import Card
+from announcements.models import Announcement
 
 # Create your views here.
-
 def index(request):
-    # Page from the theme
-    return render(request, 'pages/index.html')
-def mohe(request):
-    mohe_cards = Card.objects.filter(card_visible=True,sponsor='mohe')
+    headline = Announcement.objects.filter(homepage_headline=True)
+    homepage = {
+        'headline': headline,
+    }
 
-    cards = {
-        'mohe_cards': mohe_cards,
+    # Page from the theme
+    return render(request, 'pages/index.html', homepage)
+
+def students(request):
+    # Page from the theme
+    return render(request, 'pages/students.html')
+
+def announcements(request):
+    announcement_rec = Announcement.objects.filter(publish=True)
+    important_announce = Announcement.objects.filter(publish=True, important_announce=True)
+
+    active_announcement = {
+        'announcement_rec': announcement_rec,
+        'important_announce': important_announce,
     }
     # Page from the theme
-    return render(request, 'pages/mohe.html', cards)
-
-def kuwait_university(request):
-    ku_cards = Card.objects.filter(card_visible=True, sponsor='kuwait university')
-
-    cards = {
-        'ku_cards': ku_cards,
-    }
-    # Page from the theme
-    return render(request, 'pages/kuwait_university.html', cards)
+    return render(request, 'pages/announcements.html', active_announcement)
 
 def contacts(request):
     obj = Employee.objects.get(id=1)
@@ -75,3 +78,34 @@ def contacts(request):
         'it_dir': it_dir,
     }
     return render(request, 'pages/contacts.html', my_employee)
+
+def mohe(request):
+    mohe_cards = Card.objects.filter(card_visible=True,sponsor='mohe')
+
+    cards = {
+        'mohe_cards': mohe_cards,
+    }
+    # Page from the theme
+    return render(request, 'pages/mohe.html', cards)
+
+def kuwait_university(request):
+    ku_cards = Card.objects.filter(card_visible=True, sponsor='kuwait university')
+
+    cards = {
+        'ku_cards': ku_cards,
+    }
+    # Page from the theme
+    return render(request, 'pages/kuwait_university.html', cards)
+
+def civil_service(request):
+    # Page from the theme
+    return render(request, 'pages/civil_service.html')
+
+def kuwait_authority(request):
+    # Page from the theme
+    return render(request, 'pages/kuwait_authority.html')
+
+def paaet(request):
+    # Page from the theme
+    return render(request, 'pages/paaet.html')
+

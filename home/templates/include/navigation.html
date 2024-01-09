@@ -1,6 +1,6 @@
 {% load static %}
 <!-- Navbar -->
-<div class="container position-sticky z-index-sticky top-0">
+<div class="container position-sticky z-index-sticky top-0" xmlns="http://www.w3.org/1999/html">
   <div class="row">
     <div class="col-12">
       <nav class="navbar navbar-expand-lg  blur blur-rounded top-0 z-index-fixed shadow position-absolute my-3 py-2 start-0 end-0 mx-4">
@@ -20,6 +20,14 @@
           </button>
           <div class="collapse navbar-collapse pt-3 pb-2 py-lg-0 w-100" id="navigation">
             <ul class="navbar-nav navbar-nav-hover ms-lg-12 ps-lg-5 w-100">
+
+              <!-- Student Resources Link-->
+              <li class="nav-item dropdown dropdown-hover mx-2">
+                <a id="dropdownMenuStudents" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                   href="students/">
+                  Student Resources
+                </a>
+              </li>
                 <!-- Sponsors Link-->
               <li class="nav-item dropdown dropdown-hover mx-2">
                 <a class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
@@ -37,90 +45,92 @@
                   </div>
 
                   <div class="d-none d-lg-block">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
-                        <a href="mohe/"> MINISTRY OF HIGHER EDUCATION </a>
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                      <a href="mohe/"> MINISTRY OF HIGHER EDUCATION </a>
                     </div>
                   </div>
 
                   <div class="d-none d-lg-block">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
                       <a href="kuwait_university/"> KUWAIT UNIVERSITY</a>
                     </div>
                   </div>
 
                   <div class="d-none d-lg-block">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
-                      CIVIL SERVICE COMMISSION
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                      <a href="civil_service/">CIVIL SERVICE COMMISSION</a>
                     </div>
                   </div>
 
                   <div class="d-none d-lg-block">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
-                      PAAET
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                      <a href="paaet/">PAAET </a>
                     </div>
                   </div>
 
                   <div class="d-none d-lg-block">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
-                      KUWAIT INVESTMENT AUTHORITY
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                    <a href="kuwait_authority/">KUWAIT INVESTMENT AUTHORITY </a>
                     </div>
                   </div>
                   <!-- For Mobile Screen-->
                   <div class="d-lg-none">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-center align-items-center px-0">
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-center align-items-center px-0">
                       <i class="fas fa-university"> </i>
                     </div>
                   </div>
 
                   <div class="d-lg-none">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
                       <a href="mohe/"> MINISTRY OF HIGHER EDUCATION </a>
                     </div>
                   </div>
 
                   <div class="d-lg-none">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
                        <a href="kuwait_university/"> KUWAIT UNIVERSITY</a>
                     </div>
                   </div>
 
                   <div class="d-lg-none">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
-                      CIVIL SERVICE COMMISSION
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                      <a href="civil_service/">CIVIL SERVICE COMMISSION</a>
                     </div>
                   </div>
 
                   <div class="d-lg-none">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
-                      PAAET
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                      <a href="paaet/">PAAET</a>
                     </div>
                   </div>
 
                   <div class="d-lg-none">
-                    <div class="dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
-                      KUWAIT INVESTMENT AUTHORITY
+                    <div class="nav-link dropdown-header text-dark font-weight-bolder d-flex justify-content-cente align-items-center px-0">
+                      <a href="kuwait_authority/"> KUWAIT INVESTMENT AUTHORITY</a>
                     </div>
                   </div>
                 </div>
               </li>
                <!-- University Listings Link-->
               <li class="nav-item dropdown dropdown-hover mx-2">
-                <div id="dropdownMenuUniversityList" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder">
-                  <a href="https://kuwaitculturedc.org/university_listing/school_programs_list.php" target="_blank" > University Listings </a>
-                </div>
+                <a id="dropdownMenuUniversityList" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                   href="https://kuwaitculturedc.org/university_listing/school_programs_list.php" target="_blank">
+                  University Listings
+                </a>
               </li>
               <!-- Announcements Link-->
               <li class="nav-item dropdown dropdown-hover mx-2">
-                <div id="dropdownMenuAnnouncements" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder">
-                  <a href="#" target="_blank">Announcements</a>
-                </div>
+                <a id="dropdownMenuAnnouncements" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                   href="announcements/">
+                  Announcements
+                </a>
               </li>
-
               <!--  Directory Link-->
-              <li class="nav-item dropdown dropdown-hover mx-2">
-                <div id="dropdownMenuDirectory" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder">
-                  <a href="/contacts"> Directory</a>
-                </div>
+              <li class="nav-item dropdown dropdown-hover mx-2 ">
+                <a id="dropdownMenuDirectory" class="nav-link ps-2 d-flex justify-content-between cursor-pointer align-items-center font-weight-bolder"
+                  href="/contacts">
+                  Directory
+                </a>
               </li>
 
 
@@ -992,8 +1002,7 @@
 <!--                </div>-->
 <!--              </li>-->
 
-              </section>
-              <!-- END Hide links-->
+
 
 
 
@@ -1165,25 +1174,34 @@
 <!--                </div>-->
 <!--              </li>-->
 
-              {% if request.user.is_authenticated %}
-              <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2"
-                  href="{% url 'logout' %}">
-                  <i class="fa fa-sign-out me-1"></i>
-                  <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip"
-                    data-bs-placement="bottom" title="Logout">Logout</p>
-                </a>
-              </li>
-              {% else %}
-              <li class="nav-item ms-lg-auto">
-                <a class="nav-link nav-link-icon me-2"
-                  href="{% url 'login' %}">
-                  <i class="fa fa-sign-in me-1"></i>
-                  <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip"
-                    data-bs-placement="bottom" title="Login">Login</p>
-                </a>
-              </li>
-              {% endif %}
+
+
+
+        </section>
+              <!-- END Hide links-->
+
+
+
+
+<!--              {% if request.user.is_authenticated %}-->
+<!--              <li class="nav-item ms-lg-auto">-->
+<!--                <a class="nav-link nav-link-icon me-2"-->
+<!--                  href="{% url 'logout' %}">-->
+<!--                  <i class="fa fa-sign-out me-1"></i>-->
+<!--                  <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip"-->
+<!--                    data-bs-placement="bottom" title="Logout">Logout</p>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              {% else %}-->
+<!--              <li class="nav-item ms-lg-auto">-->
+<!--                <a class="nav-link nav-link-icon me-2"-->
+<!--                  href="{% url 'login' %}">-->
+<!--                  <i class="fa fa-sign-in me-1"></i>-->
+<!--                  <p class="d-inline text-sm z-index-1 font-weight-bold" data-bs-toggle="tooltip"-->
+<!--                    data-bs-placement="bottom" title="Login">Login</p>-->
+<!--                </a>-->
+<!--              </li>-->
+<!--              {% endif %}-->
 
 <!--              <li class="nav-item my-auto ms-3 ms-lg-0">-->
 <!--                <a href="https://appseed.us/product/soft-ui-design/django/" target="_blank"-->
