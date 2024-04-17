@@ -112,7 +112,7 @@ The theme used to style this starter provides the following files:
    |
    |-- templates/                     # Root Templates Folder 
    |    |          
-   |    |-- accounts/       
+   |    |-- account/       
    |    |    |-- sign-in.html         # Sign IN Page
    |    |    |-- sign-up.html         # Sign UP Page
    |    |

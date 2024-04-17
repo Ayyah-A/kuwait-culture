@@ -6,12 +6,16 @@ sponsor_choices = (
     ("civil service", "Civil Service"),
     ("paaet", "PAAET"),
     ("kuwait investment authority", "Kuwait Investment Authority"),
+    ("all", "All"),
 )
 
 page_choices = (
+    ('homepage', 'Homepage'),
     ('home', 'Home'),
+    ('students', 'Students'),
     ('rules', 'Rules'),
     ('requirements', 'Requirements'),
+
 )
 
 
@@ -21,7 +25,6 @@ class Card(models.Model):
     sponsor = models.CharField(max_length=120, choices=sponsor_choices, null=True)
     page = models.CharField(max_length=120, choices=page_choices, null=True)
     card_link = models.CharField(max_length=500, default='javascript:;')
+    image = models.ImageField(upload_to='card_images', null=True, blank=True)
     card_visible = models.BooleanField(default=True)
 
-    def __str__(self):
-        return self.sponsor + "-" + self.page + "-" + self.title

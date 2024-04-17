@@ -21,7 +21,7 @@
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-8 text-center mx-auto my-auto">
-            <h1 class="text-white">Student Resources</h1>
+            <h1 class="text-cream">Student Resources</h1>
 <!--            <h2 class="mb-4 text-white opacity-8">Directory</h2>-->
           </div>
         </div>
@@ -46,11 +46,37 @@
   <!-- -------- END HEADER 7 w/ text and video ------- -->
 
 
+<section class="my-0 py-2">
+  <div class="container">
+    <div class="row">
+      <div class="row justify-content-center text-center my-sm-5">
+        <div class="col-lg-8 mb-2">
+          <h3 class="text-gradient text-brown text-nowrap">OUR STUDENTS ARE THE FUTURE OF KUWAIT</h3>
+          <h3 class="text-gradient text-warning">...</h3>
+        </div>
+        <div class="text-start">
+          <p class="lead">
+            The Cultural Counselor, Cultural Attaches, and the Cultural Office staff are pleased to offer our services to you throughout your studies in the United States and Canada.
+            We encourage you to utilize the many resources available to you at your university and in this office in meeting your educational objectives.
+          </p>
+
+          <p class="lead">
+            As you embark on your educational adventure, we remind you that you are ambassadors, representing your values, your country and your family.
+            We invite you to visit our website frequently for updates on scholarship rules and regulations, changes in U.S. Law including immigration regulations and other pertinent announcements.
+            Always remember that we are here to support and assist you as you meet the many challenges ahead.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 <section class="my-0 py-5" >
   <div class="container">
     <div class="row">
 
-      {% for card in ku_cards %}
+      {% for card in resource_cards %}
       <div class="col col-sm  align-items-stretch mt-4 mx-md-auto aos-init" data-aos="flip-right" data-aos-delay="400">
         <a href="{{ card.card_link }}">
       <div class="card card-background tilt" data-tilt>

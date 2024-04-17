@@ -16,7 +16,7 @@
 
   <!-- -------- START HEADER 7 w/ text and video ------- -->
   <header class="bg-gradient-dark">
-    <div class="page-header min-vh-65" style="background-image: url('{% static 'images/washington-dc.jpg' %}');">
+    <div class="page-header min-vh-55" style="background-image: url('{% static 'images/washington-dc.jpg' %}');">
       <span class="mask bg-gradient-brown opacity-8"></span>
       <div class="container">
         <div class="row justify-content-center">
@@ -60,9 +60,9 @@
               <div class="container shadow py-3 mb-3" style="background-color:#E8DCB5;" >
                 {% for announce in important_announce %}
                     <div class="row justify-content-center">
-                        <div class="col-md-8 text-center mb-5 mt-2">
-                          <h6 class="text-brown z-index-1 position-relative ">{{announce.title}}</h6>
-                          <p class="text-brown opacity-8 mb-0 fs-6">{{announce.post_date}}</p>
+                        <div class="col-md-11 text-start mb-3 mt-2">
+                          <p class="text-brown z-index-1 position-relative fw-bold"><a href="../announcement_details/{{announce.id}}">{{announce.title}}</a></p>
+                          <p class="text-brown opacity-8 mb-0 fs-8">{{announce.post_date}}</p>
                         </div>
                     </div>
                 {% endfor %}
@@ -71,33 +71,62 @@
       </div>
          <!-- All Announcements-->
         <div class="col-lg-7">
-          {% for announce in announcement_rec %}
+          {% for announce in announces %}
           <div class="container shadow py-3 mb-3" style="background-color:#E8DCB5;" >
             <div class="row justify-content-center">
                 <div class="col-md-8 text-center mb-4 mt-2">
-                  <h4 class="text-brown z-index-1 position-relative">{{announce.title}}</h4>
+                  <h4 class="text-brown z-index-1 position-relative"><a href="../announcement_details/{{announce.id}}">{{announce.title}}</a></h4>
                   <p class="text-brown opacity-8 mb-0">{{announce.post_date}}</p>
                 </div>
 
-                <div class="col-lg-8 col-12 mb-3">
-                  <div class="card card-profile mt-lg-0 mt-1 overflow-hidden border border-brown">
-                    <div class="row">
-                      <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">
-                        <div class="card-body">
-                          <h5 class="mb-0">{{announce.post_date}}</h5>
-                          <p class="mb-0">{{announce.post_date}}</p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
 
-                 <div class="text-center my-2">
-                    <a class="btn bg-gradient-brown" href="#"> View </a>
-                </div>
+<!--                <div class="col-lg-8 col-12 mb-3">-->
+<!--                  <div class="card card-profile mt-lg-0 mt-1 overflow-hidden border border-brown">-->
+<!--                    <div class="row">-->
+<!--                      <div class="col-lg-8 col-md-6 col-12 ps-lg-0 my-auto">-->
+<!--                        <div class="card-body">-->
+<!--                          <h5 class="mb-0">{{announce.post_date}}</h5>-->
+<!--                          <p class="mb-0">{{announce.post_date}}</p>-->
+<!--                        </div>-->
+<!--                      </div>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+
+<!--                 <div class="text-center my-2">-->
+<!--                    <a class="btn bg-gradient-brown" href="#"> View </a>-->
+<!--                </div>-->
             </div>
           </div>
           {% endfor %}
+
+          {% if announces.has_other_pages %}
+                <div class="col-md-8 text-center mb-4 mt-2">
+                  <ul class="pagination ">
+                    {% if announce.has_previous %}
+                      <li class="mx-3"><a href="?page={{ announces.previous_page_number }}">&laquo;</a></li>
+                    {% else %}
+                      <li class="disabled mx-3"><span>&laquo;</span></li>
+                    {% endif %}
+
+                    {% for i in announces.paginator.page_range %}
+                      {% if announces.number == i %}
+                        <li class="active mx-3"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                      {% else %}
+                        <li class="mx-3"><a href="?page={{ i }}">{{ i }}</a></li>
+                      {% endif %}
+                    {% endfor %}
+
+                    {% if announces.has_next %}
+                      <li class="mx-3"><a href="?page={{ announces.next_page_number }}">&raquo;</a></li>
+                    {% else %}
+                      <li class="disabled mx-3"><span>&raquo;</span></li>
+                    {% endif %}
+                  </ul>
+                </div>
+                {% endif %}
+
+
 
       </div>
 

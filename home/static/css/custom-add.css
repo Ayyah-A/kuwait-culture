@@ -227,11 +227,9 @@ svg.text-brown .color-background {
   display: none;
 }
 
-/* chang this later */
-.carousel-item img {
-height: 800px;
+#main-nav {
+    background-color: #F5F5DC;
 }
-
 
 
 .navbar-nav .nav-item .nav-link:hover{
@@ -245,3 +243,118 @@ height: 800px;
   color: #F5F5DC;
   box-shadow: inset 0 -2.5px 0 0 #F5F5DC;
 }
+
+details{
+    border: 3px solid #aaa;
+    border-radius: 4px;
+    padding: 1em 1em 0;
+}
+
+details summary {
+    list-style: none;
+}
+
+details:hover {
+    color: #E8DCB5;
+    background-color: #E8DCB5;
+}
+
+.details_title {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 1em;
+}
+
+/* Bottom right text */
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+}
+
+ /************************* SPONSOR BUTTONS ***********************************/
+
+.pop-zoom:hover{
+    opacity: 0.6;
+    animation: popup 0.5s;
+    animation-iteration-count: infinite;
+}
+
+.hide {
+  display: none;
+  visibility: hidden;
+}
+.pop-zoom:hover a {
+  display: block;
+  color: red;
+}
+
+/*
+@keyframes popup {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  10% { transform: translate(-1px, -2px) rotate(-1deg); }
+  20% { transform: translate(-3px, 0px) rotate(1deg); }
+  30% { transform: translate(3px, 2px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  50% { transform: translate(-1px, 2px) rotate(-1deg); }
+  60% { transform: translate(-3px, 1px) rotate(0deg); }
+  70% { transform: translate(3px, 1px) rotate(-1deg); }
+  80% { transform: translate(-1px, -1px) rotate(1deg); }
+  90% { transform: translate(1px, 2px) rotate(0deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+ ************************** END SPONSOR BUTTONS ********************************/
+
+ /*************************** Headline Alert Ticker ************************************/
+
+.headline-alert{
+    padding: 7px;
+
+    color: #5c451f;
+    /*
+    border-radius: 20%;
+    border: 3px solid #E8DCB5;
+    background: linear-gradient(90deg, rgba(194,165,116,1) 10%, rgba(245,238,220,1) 20%, rgba(226,211,181,1) 79%, rgba(194,165,116,1) 90%);
+    */
+}
+
+
+
+.ticker-container {
+    width: 100%;
+    overflow: hidden;
+}
+
+.ticker-wrapper {
+    width: 100%;
+    padding-left: 100%;
+    background-color: transparent;
+}
+
+@keyframes ticker {
+    0% { transform: translate3d(0, 0, 0); }
+    100% { transform: translate3d(-100%, 0, 0); }
+}
+
+.ticker-transition {
+    display: inline-block;
+    white-space: nowrap;
+    padding-right: 100%;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-name: ticker;
+    animation-duration: 20s;
+}
+
+.ticker-transition:hover {
+    animation-play-state: paused;
+    cursor: pointer;
+}
+
+.ticker-item {
+    display: inline-block;
+    padding: 0 2rem;
+}
+
+ /*    *********************** END Headline Ticker ***************************      */

@@ -15,9 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import include, path
+from basic_page import views
+from core import settings
+from home import views as home_views
+from django.conf.urls.static import static
+from announce.views import announcement_detail
+
 
 urlpatterns = [
     path('', include('home.urls')),
     path("admin/", admin.site.urls),
-    path("", include('theme_soft_design.urls'))
-]
+    path("", include('theme_soft_design.urls')),
+    path("tinymce", include('tinymce.urls')),
+    path('<slug:page>/<slug:tag>/', views.basic_page),
+    path('announcement_details/<int:id>', announcement_detail),
+
+
+] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
