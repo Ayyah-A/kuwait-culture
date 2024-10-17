@@ -1,0 +1,116 @@
+{% extends 'layout/base_sections.html' %}
+{% load static %}
+
+{% block title %} Kuwait Culture Office Positions{% endblock title %}
+{% block body %} class="job-positions" {% endblock body %}
+
+{% block header %}
+
+{% include 'include/navigation.html' %}
+
+{% endblock header %}
+
+{% block content %}
+
+<section>
+  <div class="page-header min-vh-100">
+    <div class="container">
+      <div class="row">
+        <div class="col-xl-8 col-lg-6 col-md-7 d-flex flex-column mx-lg-0 mx-auto">
+          <div class="card card-shadow">
+            <div class="card-header pb-0 text-left">
+              <h4 class="text-brown font-weight-bolder">Available Positions</h4>
+              <p class="text-brown">View all vacant positions listed below</p>
+            </div>
+            <div class="card-body">
+
+                {% for doc in docs  %}
+                  <div class="col-md-8 text-start mb-1 mt-1">
+                    <p class="lead text-brown">
+                      <a href="{{doc.file.url}}" target="_blank"> {{doc.doc_name}} </a>
+                    </p>
+                  </div>
+                {% endfor %}
+
+
+                {% if docs.has_other_pages %}
+                <div class="col-md-8 text-center mb-4 mt-2 mx-auto">
+                  <ul class="pagination ">
+                    {% if docs.has_previous %}
+                      <li class="mx-3"><a href="?page={{ docs.previous_page_number }}">&laquo;</a></li>
+                    {% else %}
+                      <li class="disabled mx-3"><span>&laquo;</span></li>
+                    {% endif %}
+
+                    {% for i in docs.paginator.page_range %}
+                      {% if docs.number == i %}
+                        <li class="active mx-3"><span>{{ i }} <span class="sr-only">(current)</span></span></li>
+                      {% else %}
+                        <li class="mx-3"><a href="?page={{ i }}">{{ i }}</a></li>
+                      {% endif %}
+                    {% endfor %}
+
+                    {% if docs.has_next %}
+                      <li class="mx-3"><a href="?page={{ docs.next_page_number }}">&raquo;</a></li>
+                    {% else %}
+                      <li class="disabled mx-3"><span>&raquo;</span></li>
+                    {% endif %}
+                  </ul>
+                </div>
+                {% endif %}
+
+<!--              <form method="post" action="../../admin/" role="form">-->
+<!--                {% csrf_token %}-->
+
+<!--                {% if form.non_field_errors %}-->
+<!--                  {% for error in form.non_field_errors %}-->
+<!--                    <span class="text-danger"> {{ error }} </span>-->
+<!--                  {% endfor %}-->
+<!--                {% endif %}-->
+
+<!--                {% for field in form %}-->
+<!--                  <div class="mb-3">-->
+<!--                    {{ field }}-->
+<!--                  </div>-->
+<!--                  <span class="text-danger"> {{ field.errors }} </span>-->
+<!--                {% endfor %}-->
+<!--                <div class="form-check form-switch">-->
+<!--                  <input class="form-check-input" type="checkbox" id="rememberMe">-->
+<!--                  <label class="form-check-label" for="rememberMe">Remember me</label>-->
+<!--                </div>-->
+<!--                <a href="{% url 'password_reset' %}" class="text-brown text-gradient font-weight-bold">Forgot Password?</a>-->
+<!--                <div class="text-center">-->
+<!--                  <button type="submit" class="btn btn-lg bg-gradient-brown btn-lg w-100 mt-4 mb-0">Sign in</button>-->
+<!--                </div>-->
+<!--              </form>-->
+            </div>
+<!--            <div class="card-footer text-center pt-0 px-lg-2 px-1">-->
+<!--              <p class="mb-4 text-sm mx-auto">-->
+<!--                Don't have an account?-->
+<!--                <a href="{% url 'register' %}" class="text-primary text-gradient font-weight-bold">Sign up</a>-->
+<!--              </p>-->
+<!--            </div>-->
+          </div>
+        </div>
+        <div class="col-4 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 end-0 text-center justify-content-center flex-column">
+          <div class="position-relative bg-gradient-brown h-100 m-3 px-7 border-radius-lg d-flex flex-column justify-content-center">
+            <img src="{% static 'img/shapes/pattern-lines.svg' %}" alt="pattern-lines" class="position-absolute opacity-4 start-0">
+            <div class="position-relative">
+              <img class="max-width-500 w-100 position-relative z-index-2" src="{% static 'images/dc-office.jpg' %}">
+            </div>
+            <h4 class="mt-5 text-cream font-weight-bolder">Kuwait Cultural Office</h4>
+            <h6 class="text-cream font-weight-bolder">Washington, DC</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock content %}
+
+{% block footer %}
+
+{% include 'include/footer_signin.html' %}
+
+{% endblock footer %}

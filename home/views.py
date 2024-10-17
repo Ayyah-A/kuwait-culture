@@ -179,7 +179,25 @@ def kuwait_authority(request):
     return render(request, 'pages/kuwait_authority.html', cards)
 
 
+def positions(request):
+    documents = Document.objects.filter(published=True).order_by('doc_name')
+    important_documents = Document.objects.filter(published=True, important_doc=True).order_by('doc_name')[:5]
+    page = request.GET.get('page', 1)
 
+    paginator = Paginator(documents, 10)
+    try:
+        docs = paginator.page(page)
+    except PageNotAnInteger:
+        docs = paginator.page(1)
+    except EmptyPage:
+        docs = paginator.page(paginator.num_pages)
+
+    student_documents = {
+        'documents': documents,
+        'important_documents': important_documents,
+        'docs': docs,
+    }
+    return render(request, 'pages/positions.html', student_documents)
 
 
 
